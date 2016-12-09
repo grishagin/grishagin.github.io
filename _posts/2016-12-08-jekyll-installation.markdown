@@ -10,7 +10,7 @@ NOTES:
 As such, using "liquid tags" is mandatory.  
 
 ### Ruby 
-#### *from [Dave Rupert][daverupert]*  
+##### *from [Dave Rupert][daverupert]*  
 {% highlight console %}
 $ sudo apt-add-repository ppa:brightbox/ruby-ng  
 $ sudo apt update  
