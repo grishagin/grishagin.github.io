@@ -15,19 +15,17 @@ As such, using "liquid tags" is mandatory.
 ##### *from [Dave Rupert][daverupert]*  
 
 ```console
-
 $ sudo apt-add-repository ppa:brightbox/ruby-ng  
 $ sudo apt update  
 $ sudo apt install ruby2.3 ruby2.3-dev ruby-switch  
 $ ruby -v  
-
 ``` 
 
 ### Python 2.7.12  
 
 ##### *from [tecadmin]*  
 
-{% highlight console %}
+```bash
 $ sudo apt-get install build-essential checkinstall  
 $ sudo apt-get install libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev  
 $ cd /usr/src  
@@ -36,7 +34,7 @@ $ sudo tar -xzf Python-2.7.12.tgz
 $ cd Python-2.7.12  
 $ sudo ./configure  
 $ sudo make altinstall  
-{% endhighlight %} 
+```
 
 ### Jekyll  
 
