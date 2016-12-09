@@ -8,12 +8,12 @@ Here's what worked for me.
 
 ### Ruby  
 ##### *from [Dave Rupert][daverupert]*  
-```bash
+~~~bash
 $ sudo apt-add-repository ppa:brightbox/ruby-ng
 $ sudo apt update
 $ sudo apt install ruby2.3 ruby2.3-dev ruby-switch
 $ ruby -v
-```
+~~~
 
 ### Python 2.7.12  
 ##### *from [tecadmin]*  
