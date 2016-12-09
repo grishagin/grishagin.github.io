@@ -8,7 +8,7 @@ Here's what worked for me.
 Code formatting is fine when serving the site locally, but is broken on github.  Strange.
 
 ### Ruby  
-#### *from [Dave Rupert][daverupert]*  
+#### from [Dave Rupert][daverupert]  
 {% highlight bash %}
 $ sudo apt-add-repository ppa:brightbox/ruby-ng  
 $ sudo apt update  
@@ -18,7 +18,7 @@ $ ruby -v
 
 ### Python 2.7.12  
 ##### *from [tecadmin]*  
-```bash   
+{% highlight bash %}
 $ sudo apt-get install build-essential checkinstall  
 $ sudo apt-get install libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev  
 $ cd /usr/src  
@@ -27,18 +27,18 @@ $ sudo tar -xzf Python-2.7.12.tgz
 $ cd Python-2.7.12  
 $ sudo ./configure  
 $ sudo make altinstall  
-```  
+{% endhighlight %} 
 
 ### Jekyll  
 ##### *from [Jekyll][jekyllrb]*  
-```bash  
+{% highlight bash %}
 $ sudo gem install jekyll  
 $ sudo gem install jekyll bundler  
 $ sudo gem install minima  
 $ sudo gem install jekyll-feed  
 $ cd /mnt/d/git/grishagin.github.io  
 $ jekyll new .  
-```  
+{% endhighlight %} 
 
 
 
