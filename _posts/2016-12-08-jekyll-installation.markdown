@@ -5,10 +5,12 @@ date:   2016-12-08 15:38:37 -0500
 categories: jekyll
 ---
 Here's what worked for me.  
-Code formatting is fine when serving the site locally, but is broken on github.  Strange.
+NOTES:  
+* Code formatting using \`\`\` is fine when serving the site locally, but is broken on github.  
+As such, using \{\% highlight \%\} style is mandatory.  
 
 ### Ruby  
-#### from [Dave Rupert][daverupert]  
+#### *from [Dave Rupert][daverupert]*  
 {% highlight bash %}
 $ sudo apt-add-repository ppa:brightbox/ruby-ng  
 $ sudo apt update  
