@@ -7,11 +7,10 @@ categories: jekyll
 Here's what worked for me.  
 NOTES:  
 * Code formatting using \`\`\` is fine when serving the site locally, but is broken on github.  
-As such, using \{\% highlight \%\} style is mandatory.  
+As such, using `\{% highlight %\}` style is mandatory.  
 
-### Ruby 
-##### BOO
-#### *from [Dave Rupert][daverupert]*  
+### Ruby  
+#### *from [Dave Rupert][daverupert]*  ##
 {% highlight bash %}
 $ sudo apt-add-repository ppa:brightbox/ruby-ng  
 $ sudo apt update  
