@@ -1,22 +1,16 @@
 ---
 layout: post
-title:  "Installing Jekyll via console on Ubuntu on Windows 10"
+title:  "Installing Jekyll via Bash on Ubuntu on Windows 10"
 date:   2016-12-08 15:38:37 -0500
 categories: jekyll
 ---
 
 Here's what worked for me.  
-NOTES:  
-- Markdown engine works slightly differently locally compared to github.  
-- Code formatting using \`\`\` and ~~~  
-As such, using "liquid tags" is mandatory.  
-```console
-$ sudo apt-add-repository ppa:brightbox/ruby-ng  
-```
 
 ### Ruby 
 
 ##### *from [Dave Rupert][daverupert]*  
+
 ```console
 $ sudo apt-add-repository ppa:brightbox/ruby-ng  
 $ sudo apt update  
@@ -43,16 +37,18 @@ $ sudo make altinstall
 
 ##### *from [Jekyll][jekyllrb]*  
 
-{% highlight console %}
+```console
 $ sudo gem install jekyll  
 $ sudo gem install jekyll bundler  
 $ sudo gem install minima  
 $ sudo gem install jekyll-feed  
 $ cd /mnt/d/git/grishagin.github.io  
 $ jekyll new .  
-{% endhighlight %} 
+```
 
+### General Notes
 
+* For bash formatting \`\`\`*console* works much better than \`\`\`*bash*
 
 
 
