@@ -48,7 +48,7 @@ $ jekyll new .
 
 ### General Notes
 
-* For bash formatting \`\`\`*console* works much better than \`\`\`*bash*
+* For bash formatting, \`\`\`*console* works much better than \`\`\`*bash*.
 
 
 

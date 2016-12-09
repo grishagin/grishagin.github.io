@@ -18,14 +18,9 @@ Good news is that those drawbacks simply boil down to a handful of quirks, rathe
 * Two subsequent headers must have a break of one or more lines between them.  
 Otherwise, the header, following the first one, won't be interpreted. 
 * Code formatting using \`\`\` and ~~~ has more limitations than "liquid tags".  
-In particular, code highlighted in such manner must be separated from preceding text by one or more lines.
+In particular, code highlighted in such manner must be separated from the preceding text by one or more lines.
+* Lists have to be separated from the preceding text by one or more lines.
 
-
-
-~~~ console
-$ sudo
-~~~
-	
 	
 	
 [github pages setup]: https://pages.github.com/
