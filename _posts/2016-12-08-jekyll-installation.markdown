@@ -4,11 +4,15 @@ title:  "Installing Jekyll via console on Ubuntu on Windows 10"
 date:   2016-12-08 15:38:37 -0500
 categories: jekyll
 ---
+
 Here's what worked for me.  
 NOTES:
-  
-- Code formatting using \`\`\` is fine when serving the site locally, but is broken on github.  
-As such, using "liquid tags" is mandatory.  
+- Markdown engine works slightly differently locally compared to github. 
+- Code formatting using \`\`\` and ~~~ 
+As such, using "liquid tags" is mandatory `{% highlight %}`.  
+```console
+code
+```
 
 ### Ruby 
 
@@ -25,7 +29,7 @@ $ ruby -v
 
 ##### *from [tecadmin]*  
 
-```bash
+```console
 $ sudo apt-get install build-essential checkinstall  
 $ sudo apt-get install libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev  
 $ cd /usr/src  
