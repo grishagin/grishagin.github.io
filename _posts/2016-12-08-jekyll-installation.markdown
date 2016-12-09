@@ -5,12 +5,15 @@ date:   2016-12-08 15:38:37 -0500
 categories: jekyll
 ---
 Here's what worked for me.  
-NOTES:  
+NOTES:
+  
 - Code formatting using \`\`\` is fine when serving the site locally, but is broken on github.  
 As such, using "liquid tags" is mandatory.  
 
 ### Ruby 
+
 ##### *from [Dave Rupert][daverupert]*  
+
 {% highlight console %}
 $ sudo apt-add-repository ppa:brightbox/ruby-ng  
 $ sudo apt update  
@@ -19,7 +22,9 @@ $ ruby -v
 {% endhighlight %} 
 
 ### Python 2.7.12  
+
 ##### *from [tecadmin]*  
+
 {% highlight console %}
 $ sudo apt-get install build-essential checkinstall  
 $ sudo apt-get install libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev  
@@ -32,7 +37,9 @@ $ sudo make altinstall
 {% endhighlight %} 
 
 ### Jekyll  
+
 ##### *from [Jekyll][jekyllrb]*  
+
 {% highlight console %}
 $ sudo gem install jekyll  
 $ sudo gem install jekyll bundler  
