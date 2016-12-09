@@ -7,7 +7,7 @@ categories: jekyll
 Here's what worked for me.  
 NOTES:  
 * Code formatting using \`\`\` is fine when serving the site locally, but is broken on github.  
-As such, using \{\% highlight \%\} style is mandatory.  
+As such, using `\{\% highlight \%\}` style is mandatory.  
 
 ### Ruby 
 #### *from [Dave Rupert][daverupert]*  
