@@ -6,8 +6,8 @@ categories: jekyll
 ---
 Here's what worked for me.
 
-### Ruby
-##### *from [Dave Rupert][daverupert]*
+### Ruby  
+##### *from [Dave Rupert][daverupert]*  
 ```bash
 $ sudo apt-add-repository ppa:brightbox/ruby-ng
 $ sudo apt update
@@ -15,8 +15,8 @@ $ sudo apt install ruby2.3 ruby2.3-dev ruby-switch
 $ ruby -v
 ```
 
-### Python 2.7.12
-##### *from [tecadmin]*
+### Python 2.7.12  
+##### *from [tecadmin]*  
 ```bash
 $ sudo apt-get install build-essential checkinstall
 $ sudo apt-get install libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev
@@ -28,8 +28,8 @@ $ sudo ./configure
 $ sudo make altinstall
 ```
 
-### Jekyll
-##### *from [Jekyll][jekyllrb]*
+### Jekyll  
+##### *from [Jekyll][jekyllrb]*  
 ```bash
 $ sudo gem install jekyll
 $ sudo gem install jekyll bundler
