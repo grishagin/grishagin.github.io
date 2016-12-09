@@ -1,17 +1,17 @@
 ---
 layout: post
-title:  "Installing Jekyll via Bash on Ubuntu on Windows 10"
+title:  "Installing Jekyll via console on Ubuntu on Windows 10"
 date:   2016-12-08 15:38:37 -0500
 categories: jekyll
 ---
 Here's what worked for me.  
 NOTES:  
-* Code formatting using \`\`\` is fine when serving the site locally, but is broken on github.  
-As such, using ```{% highlight %}``` style is mandatory.  
+- Code formatting using \`\`\` is fine when serving the site locally, but is broken on github.  
+As such, using "liquid tags" is mandatory.  
 
 ### Ruby 
 #### *from [Dave Rupert][daverupert]*  
-{% highlight bash %}
+{% highlight console %}
 $ sudo apt-add-repository ppa:brightbox/ruby-ng  
 $ sudo apt update  
 $ sudo apt install ruby2.3 ruby2.3-dev ruby-switch  
@@ -20,7 +20,7 @@ $ ruby -v
 
 ### Python 2.7.12  
 ##### *from [tecadmin]*  
-{% highlight bash %}
+{% highlight console %}
 $ sudo apt-get install build-essential checkinstall  
 $ sudo apt-get install libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev  
 $ cd /usr/src  
@@ -33,7 +33,7 @@ $ sudo make altinstall
 
 ### Jekyll  
 ##### *from [Jekyll][jekyllrb]*  
-{% highlight bash %}
+{% highlight console %}
 $ sudo gem install jekyll  
 $ sudo gem install jekyll bundler  
 $ sudo gem install minima  
@@ -47,6 +47,6 @@ $ jekyll new .
 
 
 
-[daverupert]: http://daverupert.com/2016/04/jekyll-on-windows-with-bash/
+[daverupert]: http://daverupert.com/2016/04/jekyll-on-windows-with-console/
 [tecadmin]: http://tecadmin.net/install-python-2-7-on-ubuntu-and-linuxmint/
 [jekyllrb]: https://jekyllrb.com/docs/quickstart/
