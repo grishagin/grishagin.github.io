@@ -14,12 +14,14 @@ As such, using "liquid tags" is mandatory.
 
 ##### *from [Dave Rupert][daverupert]*  
 
-{% highlight console %}
+```console
+
 $ sudo apt-add-repository ppa:brightbox/ruby-ng  
 $ sudo apt update  
 $ sudo apt install ruby2.3 ruby2.3-dev ruby-switch  
 $ ruby -v  
-{% endhighlight %} 
+
+``` 
 
 ### Python 2.7.12  
 
