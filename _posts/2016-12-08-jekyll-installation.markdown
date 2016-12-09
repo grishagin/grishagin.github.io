@@ -6,18 +6,17 @@ categories: jekyll
 ---
 
 Here's what worked for me.  
-NOTES:
-- Markdown engine works slightly differently locally compared to github. 
-- Code formatting using \`\`\` and ~~~ 
+NOTES:  
+- Markdown engine works slightly differently locally compared to github.  
+- Code formatting using \`\`\` and ~~~  
 As such, using "liquid tags" is mandatory.  
 ```console
-code
+$ sudo apt-add-repository ppa:brightbox/ruby-ng  
 ```
 
 ### Ruby 
 
 ##### *from [Dave Rupert][daverupert]*  
-
 ```console
 $ sudo apt-add-repository ppa:brightbox/ruby-ng  
 $ sudo apt update  
