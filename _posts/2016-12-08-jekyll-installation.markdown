@@ -4,16 +4,17 @@ title:  "Installing Jekyll via Bash on Ubuntu on Windows 10"
 date:   2016-12-08 15:38:37 -0500
 categories: jekyll
 ---
-Here's what worked for me.
+Here's what worked for me.  
+Code formatting is fine when serving the site locally, but is broken on github.  Strange.
 
 ### Ruby  
 #### *from [Dave Rupert][daverupert]*  
-~~~bash  
+{% highlight bash %}
 $ sudo apt-add-repository ppa:brightbox/ruby-ng  
 $ sudo apt update  
 $ sudo apt install ruby2.3 ruby2.3-dev ruby-switch  
 $ ruby -v  
-~~~  
+{% endhighlight %} 
 
 ### Python 2.7.12  
 ##### *from [tecadmin]*  
