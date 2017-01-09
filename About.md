@@ -19,7 +19,7 @@ I am a bioinformatics scientist with a background in chemistry, cell biology, an
 My experience, skills, and education are described in detail in my [Curriculum Vitae][CV], as well as briefly in my [Résumé][resume].  
 As I am a scientist, one can also certainly find me on [Google Scholar][scholar] and [Research Gate][rgate].
 
-Currently, I'm employed (yay!) by one [awesome California company][rancholink].  
+Currently, I'm employed (yay!) by one [awesome Californian company][rancholink].  
 Yet, it so happens that I am residing quite far away from sunny California (oh, no!), working on site for a [government client][ncatslink] in Maryland.
 
 ##### P.S. Yes, this is a picture of a bobblehead made in my image. It was a present from my company (I told you, they are awesome) -- I'm not that vain!
