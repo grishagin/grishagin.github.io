@@ -17,7 +17,7 @@ title: Random Thoughts
 author: Ivan Grishagin
 email: grishagin@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  IT, R, Science, Bioinformatics, Guns, and Cars. 
+  IT, R, Data science, and Bioinformatics. 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 

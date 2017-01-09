@@ -46,6 +46,14 @@ $ cd /mnt/d/git/grishagin.github.io
 $ jekyll new .  
 ```
 
+### Run
+
+```console
+$ jekyll serve --no-watch
+```
+
+After that, navigate to [http://localhost:4000/][localhost] in your browser.
+
 ### General Notes
 
 * For bash formatting, \`\`\`*console* works much better than \`\`\`*bash*.
@@ -56,3 +64,4 @@ $ jekyll new .
 [daverupert]: http://daverupert.com/2016/04/jekyll-on-windows-with-console/
 [tecadmin]: http://tecadmin.net/install-python-2-7-on-ubuntu-and-linuxmint/
 [jekyllrb]: https://jekyllrb.com/docs/quickstart/
+[localhost]: http://localhost:4000/
