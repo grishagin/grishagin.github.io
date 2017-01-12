@@ -17,6 +17,7 @@ Install or update an Excel add-in programmatically using VBA by double-clicking 
 **Important**:  
 : The event will be launched whether the add-in is opened programmatically or manually. After installation, add-in is opened programmatically every time Excel is launched.  
 2. Explicitly declare all variables.  
+
 ```vb
 Option Explicit
 Private Sub Workbook_Open()
@@ -37,6 +38,7 @@ Private Sub Workbook_Open()
 3. Get a full date and size of the open workbook.  
 Next, loop through existing add-ins, and compare the Title of every add-in to the Title of the open Workbook.  
 If there's a match, get the name of the existing add-in, and break out of the loop.  
+
 ```vb
     On Error GoTo Errorhandler
     
@@ -59,6 +61,7 @@ If there's a match, get the name of the existing add-in, and break out of the lo
 Then compare the dates and sizes of the existing and open files.  
 If sizes are different, prompt for an update.   
 If sizes are the same -- quit, but if they are different, prompt for an update.  
+
 ```vb
     'if addin with the required title exists
     If existingAddInName <> "" Then
@@ -91,7 +94,8 @@ If sizes are the same -- quit, but if they are different, prompt for an update.
 * **Important**:  
 : Open a dummy workbook to avoid an error #1004 (known bug);
 * Add add-in to add-ins collection and install.
-* Quit Excel application.
+* Quit Excel application.  
+
 ```vb
     'if the user agreed to install
     If toInstall = vbYes Then
@@ -122,6 +126,7 @@ If sizes are the same -- quit, but if they are different, prompt for an update.
     End If
 ```
 7. Quit Excel application.  
+
 ```vb  
         'pretend application is saved
         ThisWorkbook.Saved = True
