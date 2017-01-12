@@ -140,7 +140,7 @@ If sizes are the same -- quit, but if they are different, prompt for an update.
       
     Exit Sub
 
-	Errorhandler:
+    Errorhandler:
     MsgBox "Error #" & _
         Err.Number & _
         vbCrLf & _
