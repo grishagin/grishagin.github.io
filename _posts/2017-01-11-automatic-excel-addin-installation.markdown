@@ -20,6 +20,7 @@ Install or update an Excel add-in programmatically using VBA by double-clicking 
 3. Explicitly declare all variables.  
 
 	```
+	
 		Option Explicit
 		Private Sub Workbook_Open()
 			Dim eai As Excel.addin
@@ -35,6 +36,7 @@ Install or update an Excel add-in programmatically using VBA by double-clicking 
 			Dim msg As String
 			Dim toInstall As Integer
 			Dim copiedWbName As String
+			
 	```
 
 4. Get a full date and size of the open workbook.  
