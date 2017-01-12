@@ -20,6 +20,7 @@ Otherwise, the header, following the first one, won't be interpreted.
 * Code formatting using \`\`\` and ~~~ has more limitations than "liquid tags".  
 In particular, code highlighted in such manner must be separated from the preceding text by one or more lines.
 * Lists have to be separated from the preceding text by one or more lines.
+* A tab in the code may be randomly recognized as two tabs. It can be avoided by explicitly replacing such problematic tabs with equivalent number of spaces.
 
 	
 	
