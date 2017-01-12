@@ -146,7 +146,7 @@ If sizes are the same -- quit, but if they are different, prompt for an update.
         vbCrLf & _
         "Please, let Ivan know.", vbInformation
 
-	End Sub  
+    End Sub  
 ```
 
 Done!  
