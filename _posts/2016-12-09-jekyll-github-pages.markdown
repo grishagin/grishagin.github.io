@@ -28,6 +28,7 @@ In particular, code highlighted in such manner must be separated from the preced
 * This one is a really nasty problem: code blocks in lists.  They have to be indented, else they break up the list.  
 And here's the problem: a local copy is just fine with a regular tab (or 4 spaces) indentation, yet the github copy needs the **backticks to be aligned with the first letter of the first line of the corresponding list element**, i.e. in a top level list, for example, that would require **only 3, not 4 spaces** of indentation.  
 Solution is provided in [github FAQ][codelist]:
+
   ```
 	1.·some text    =>  use 3 spaces indentation e.g.
 
