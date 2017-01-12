@@ -18,6 +18,7 @@ Install or update an Excel add-in programmatically using VBA by double-clicking 
 : The event will be launched whether the add-in is opened programmatically or manually. After installation, add-in is opened programmatically every time Excel is launched.  
 
 3. Explicitly declare all variables.  
+
 	```vb
 		Option Explicit
 		Private Sub Workbook_Open()
