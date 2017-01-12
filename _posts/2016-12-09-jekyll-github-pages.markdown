@@ -6,7 +6,7 @@ categories: jekyll
 ---
 
 Setting up github pages is [easy][github pages setup].  
-You can even set them up to your favorite flavor of Jekyll!  
+You can even set them up to your favorite flavor of [Jekyll][jekyll]!  
 However, should you want to do that (as of Dec 2016), you might find yourself cursing a bit more than usual.  
 
 Most of the problems you are likely to encounter immediately are related to the markdown engine.  It works slightly differently locally compared to github.  
@@ -38,5 +38,6 @@ Solution is provided in [github FAQ][codelist]:
 	
 	
 [github pages setup]: https://pages.github.com/
+[jekyll]: https://jekyllrb.com/
 [liquidtags]: https://jekyllrb.com/docs/templates/
 [codelist]: https://github.com/planetjekyll/quickrefs/blob/master/FAQ.md#q-how-can-i-get-backtick-fenced-code-blocks-eg--working-inside-lists-with-kramdown
