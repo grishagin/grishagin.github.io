@@ -18,26 +18,25 @@ Install or update an Excel add-in programmatically using VBA by double-clicking 
 : The event will be launched whether the add-in is opened programmatically or manually. After installation, add-in is opened programmatically every time Excel is launched.  
 
 3. Explicitly declare all variables.  
-
 	```vb
-	Option Explicit
-	Private Sub Workbook_Open()
-		Dim eai As Excel.addin
-		Dim fso As Object
-		Dim oXL As Object
-		Dim response As Integer
-		Dim thisAddInDate As Date
-		Dim thisFileLen As Long
-		Dim existingAddInName As String
-		Dim existingAddinDate As Date
-		Dim existingFileLen As Long
-		Dim ai As addin
-		Dim msg As String
-		Dim toInstall As Integer
-		Dim copiedWbName As String
+		Option Explicit
+		Private Sub Workbook_Open()
+			Dim eai As Excel.addin
+			Dim fso As Object
+			Dim oXL As Object
+			Dim response As Integer
+			Dim thisAddInDate As Date
+			Dim thisFileLen As Long
+			Dim existingAddInName As String
+			Dim existingAddinDate As Date
+			Dim existingFileLen As Long
+			Dim ai As addin
+			Dim msg As String
+			Dim toInstall As Integer
+			Dim copiedWbName As String
 	```
 	
-
+	
 4. Get a full date and size of the open workbook.  
 Next, loop through existing add-ins, and compare the Title of every add-in to the Title of the open Workbook.  
 If there's a match, get the name of the existing add-in, and break out of the loop.  
