@@ -11,12 +11,12 @@ Install or update an Excel add-in programmatically using VBA by double-clicking 
   
 ### Algorithm and Code
 
-0. **Important**
+* **Important**
 : The code has to reside in the ```ThisWorkbook``` object (not in a Module!).   
-1. Add-in opening will prompt a ```Workbook_Open``` event.  
+* Add-in opening will prompt a ```Workbook_Open``` event.  
 **Important**:  
 : The event will be launched whether the add-in is opened programmatically or manually. After installation, add-in is opened programmatically every time Excel is launched.  
-2. Explicitly declare all variables.  
+* Explicitly declare all variables.  
 
 ```vb
 Option Explicit
@@ -36,7 +36,7 @@ Private Sub Workbook_Open()
     Dim copiedWbName As String
 ```
 
-3. Get a full date and size of the open workbook.  
+* Get a full date and size of the open workbook.  
 Next, loop through existing add-ins, and compare the Title of every add-in to the Title of the open Workbook.  
 If there's a match, get the name of the existing add-in, and break out of the loop.  
 
@@ -59,7 +59,7 @@ If there's a match, get the name of the existing add-in, and break out of the lo
     Next ai
 ```
 
-4. If the add-in already exists, get it's full name, and then look up the size and latest creation/modification date.  
+* If the add-in already exists, get it's full name, and then look up the size and latest creation/modification date.  
 Then compare the dates and sizes of the existing and open files.  
 If sizes are different, prompt for an update.   
 If sizes are the same -- quit, but if they are different, prompt for an update.  
@@ -87,19 +87,19 @@ If sizes are the same -- quit, but if they are different, prompt for an update.
     End If
 ```
 
-5. Prompt whether to install/update the plugin.  
+* Prompt whether to install/update the plugin.  
 
 ```vb
     toInstall = MsgBox(msg, vbYesNo)
 ```
 
-6. If install/update:  
-* Uninstall and delete the old add-in (if it exists);  
-* Copy the file to the default add-ins location;  
-* **Important**:  
+* If install/update:  
+- Uninstall and delete the old add-in (if it exists);  
+- Copy the file to the default add-ins location;  
+- **Important**:  
 : Open a dummy workbook to avoid an error #1004 (known bug);
-* Add add-in to add-ins collection and install.
-* Quit Excel application.  
+- Add add-in to add-ins collection and install.
+- Quit Excel application.  
 
 ```vb
     'if the user agreed to install
@@ -131,7 +131,7 @@ If sizes are the same -- quit, but if they are different, prompt for an update.
     End If
 ```
 
-7. Quit Excel application.  
+* Quit Excel application.  
 
 ```vb  
         'pretend application is saved
@@ -150,4 +150,4 @@ If sizes are the same -- quit, but if they are different, prompt for an update.
 	End Sub  
 ```
 
-8. Done!  
+Done!  
