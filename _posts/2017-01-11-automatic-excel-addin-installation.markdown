@@ -22,52 +22,52 @@ Install or update an Excel add-in programmatically using VBA by double-clicking 
 3. Explicitly declare all variables.  
 
    ```vb
-		Option Explicit
-		Private Sub Workbook_Open()
-			Dim eai As Excel.addin
-			Dim fso As Object
-			Dim oXL As Object
-			Dim response As Integer
-			Dim thisAddInDate As Date
-			Dim thisFileLen As Long
-			Dim existingAddInName As String
-			Dim existingAddinDate As Date
-			Dim existingFileLen As Long
-			Dim ai As addin
-			Dim msg As String
-			Dim toInstall As Integer
-			Dim copiedWbName As String
+	Option Explicit
+	Private Sub Workbook_Open()
+		Dim eai As Excel.addin
+		Dim fso As Object
+		Dim oXL As Object
+		Dim response As Integer
+		Dim thisAddInDate As Date
+		Dim thisFileLen As Long
+		Dim existingAddInName As String
+		Dim existingAddinDate As Date
+		Dim existingFileLen As Long
+		Dim ai As addin
+		Dim msg As String
+		Dim toInstall As Integer
+		Dim copiedWbName As String
    ```
 	
 4. Get a full date and size of the open workbook.  
 Next, loop through existing add-ins, and compare the Title of every add-in to the Title of the open Workbook.  
 If there's a match, get the name of the existing add-in, and break out of the loop.  
 
-		```vb
-			On Error GoTo Errorhandler
-			
-			'this wb's full name
-			thisAddInDate = FileDateTime(ThisWorkbook.FullName)
-			thisFileLen = FileLen(ThisWorkbook.FullName)
-			existingAddInName = ""
-			
-			'find if this workbooks title
-			'is the same as the title of one of the addins
-			For Each ai In Application.AddIns
-			Debug.Print ai.Title
-				If ai.Title = ThisWorkbook.Title Then
-					existingAddInName = ai.FullName
-					Exit For
-				End If
-			Next ai
-		```
+   ```vb
+		On Error GoTo Errorhandler
+		
+		'this wb's full name
+		thisAddInDate = FileDateTime(ThisWorkbook.FullName)
+		thisFileLen = FileLen(ThisWorkbook.FullName)
+		existingAddInName = ""
+		
+		'find if this workbooks title
+		'is the same as the title of one of the addins
+		For Each ai In Application.AddIns
+		Debug.Print ai.Title
+			If ai.Title = ThisWorkbook.Title Then
+				existingAddInName = ai.FullName
+				Exit For
+			End If
+		Next ai
+   ```
 
 5. If the add-in already exists, get it's full name, and then look up the size and latest creation/modification date.  
 Then compare the dates and sizes of the existing and open files.  
 If sizes are different, prompt for an update.   
 If sizes are the same -- quit, but if they are different, prompt for an update.  
 
-	```vb
+   ```vb
 		'if addin with the required title exists
 		If existingAddInName <> "" Then
 			'get existing addin's date and length
@@ -88,13 +88,13 @@ If sizes are the same -- quit, but if they are different, prompt for an update.
 		Else
 			msg = "Do you want to install the addin?"
 		End If
-	```
+   ```
 
 6. Prompt whether to install/update the plugin.  
 
-	```vb
+   ```vb
 		toInstall = MsgBox(msg, vbYesNo)
-	```
+   ```
 
 7. If install/update:  
 	* Uninstall and delete the old add-in (if it exists);  
@@ -103,7 +103,7 @@ If sizes are the same -- quit, but if they are different, prompt for an update.
 	: Open a dummy workbook to avoid an error #1004 (known bug);
 	* Add add-in to add-ins collection and install. 
 
-	```vb
+   ```vb
 		'if the user agreed to install
 		If toInstall = vbYes Then
 			'create a file system object to copy the file
@@ -131,11 +131,11 @@ If sizes are the same -- quit, but if they are different, prompt for an update.
 			Set eai = Application.AddIns.Add(Filename:=copiedWbName)
 			eai.Installed = True        
 		End If
-	```
+   ```
 
 8. Quit Excel application.  
 
-	```vb  
+   ```vb  
 		'pretend application is saved
 		ThisWorkbook.Saved = True
 		'and quit (close)
@@ -150,7 +150,7 @@ If sizes are the same -- quit, but if they are different, prompt for an update.
 		"Please, let Ivan know.", vbInformation
 
 	End Sub  
-	```
+   ```
 
 Done!  
 
