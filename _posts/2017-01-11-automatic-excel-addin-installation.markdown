@@ -5,8 +5,6 @@ date:   2017-01-11
 categories: vba
 ---
 
-## NOTE: THIS PAGE IS UNDER CONSTRUCTION
-
 ### Goal
   
 Install or update an Excel add-in programmatically using VBA by double-clicking on an add-in *.xlam file.  
