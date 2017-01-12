@@ -2,7 +2,7 @@
 layout: post
 title:  "Jekyll and Github Pages"
 date:   2016-12-09
-categories: jekyll github pages
+categories: jekyll
 ---
 
 Setting up github pages is [easy][github pages setup].  

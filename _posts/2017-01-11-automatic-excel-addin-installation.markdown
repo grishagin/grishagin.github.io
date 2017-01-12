@@ -2,7 +2,7 @@
 layout: post
 title:  "How to Install Excel Add-Ins with VBA"
 date:   2017-01-11
-categories: vba excel add-in installation
+categories: vba
 ---
 
 ### Goal
