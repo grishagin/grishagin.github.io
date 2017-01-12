@@ -35,6 +35,7 @@ Private Sub Workbook_Open()
     Dim toInstall As Integer
     Dim copiedWbName As String
 ```
+
 3. Get a full date and size of the open workbook.  
 Next, loop through existing add-ins, and compare the Title of every add-in to the Title of the open Workbook.  
 If there's a match, get the name of the existing add-in, and break out of the loop.  
@@ -57,6 +58,7 @@ If there's a match, get the name of the existing add-in, and break out of the lo
         End If
     Next ai
 ```
+
 4. If the add-in already exists, get it's full name, and then look up the size and latest creation/modification date.  
 Then compare the dates and sizes of the existing and open files.  
 If sizes are different, prompt for an update.   
@@ -84,10 +86,13 @@ If sizes are the same -- quit, but if they are different, prompt for an update.
         msg = "Do you want to install the addin?"
     End If
 ```
+
 5. Prompt whether to install/update the plugin.  
+
 ```vb
     toInstall = MsgBox(msg, vbYesNo)
 ```
+
 6. If install/update:  
 * Uninstall and delete the old add-in (if it exists);  
 * Copy the file to the default add-ins location;  
@@ -125,6 +130,7 @@ If sizes are the same -- quit, but if they are different, prompt for an update.
         eai.Installed = True        
     End If
 ```
+
 7. Quit Excel application.  
 
 ```vb  
@@ -143,4 +149,5 @@ If sizes are the same -- quit, but if they are different, prompt for an update.
 
 	End Sub  
 ```
+
 8. Done!  
