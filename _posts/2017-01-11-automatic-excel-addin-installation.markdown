@@ -94,12 +94,12 @@ If sizes are the same -- quit, but if they are different, prompt for an update.
 ```
 
 * If install/update:  
-- Uninstall and delete the old add-in (if it exists);  
-- Copy the file to the default add-ins location;  
-- **Important**:  
+1. Uninstall and delete the old add-in (if it exists);  
+2. Copy the file to the default add-ins location;  
+3. **Important**:  
 : Open a dummy workbook to avoid an error #1004 (known bug);
-- Add add-in to add-ins collection and install.
-- Quit Excel application.  
+4. Add add-in to add-ins collection and install.
+5. Quit Excel application.  
 
 ```vb
     'if the user agreed to install
