@@ -18,7 +18,9 @@ Install or update an Excel add-in programmatically using VBA by double-clicking 
 : The event will be launched whether the add-in is opened programmatically or manually. After installation, add-in is opened programmatically every time Excel is launched.  
 
 3. Explicitly declare all variables.  
-	{% highlight vb %}
+
+		```vb
+		
 		Option Explicit
 		Private Sub Workbook_Open()
 			Dim eai As Excel.addin
@@ -34,30 +36,31 @@ Install or update an Excel add-in programmatically using VBA by double-clicking 
 			Dim msg As String
 			Dim toInstall As Integer
 			Dim copiedWbName As String
-	{% endhighlight %}
+			
+		```
 
 4. Get a full date and size of the open workbook.  
 Next, loop through existing add-ins, and compare the Title of every add-in to the Title of the open Workbook.  
 If there's a match, get the name of the existing add-in, and break out of the loop.  
 
-	```vb
-			On Error GoTo Errorhandler
-			
-			'this wb's full name
-			thisAddInDate = FileDateTime(ThisWorkbook.FullName)
-			thisFileLen = FileLen(ThisWorkbook.FullName)
-			existingAddInName = ""
-			
-			'find if this workbooks title
-			'is the same as the title of one of the addins
-			For Each ai In Application.AddIns
-			Debug.Print ai.Title
-				If ai.Title = ThisWorkbook.Title Then
-					existingAddInName = ai.FullName
-					Exit For
-				End If
-			Next ai
-	```
+		```vb
+				On Error GoTo Errorhandler
+				
+				'this wb's full name
+				thisAddInDate = FileDateTime(ThisWorkbook.FullName)
+				thisFileLen = FileLen(ThisWorkbook.FullName)
+				existingAddInName = ""
+				
+				'find if this workbooks title
+				'is the same as the title of one of the addins
+				For Each ai In Application.AddIns
+				Debug.Print ai.Title
+					If ai.Title = ThisWorkbook.Title Then
+						existingAddInName = ai.FullName
+						Exit For
+					End If
+				Next ai
+		```
 
 5. If the add-in already exists, get it's full name, and then look up the size and latest creation/modification date.  
 Then compare the dates and sizes of the existing and open files.  
