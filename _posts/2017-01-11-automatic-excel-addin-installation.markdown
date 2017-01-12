@@ -19,7 +19,7 @@ Install or update an Excel add-in programmatically using VBA by double-clicking 
 
 3. Explicitly declare all variables.  
 
-	```vb
+	 ```vb
 		Option Explicit
 		Private Sub Workbook_Open()
 			Dim eai As Excel.addin
