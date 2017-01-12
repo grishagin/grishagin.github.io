@@ -98,8 +98,7 @@ If sizes are the same -- quit, but if they are different, prompt for an update.
 2. Copy the file to the default add-ins location;  
 3. **Important**:  
 : Open a dummy workbook to avoid an error #1004 (known bug);
-4. Add add-in to add-ins collection and install.
-5. Quit Excel application.  
+4. Add add-in to add-ins collection and install. 
 
 ```vb
     'if the user agreed to install
