@@ -1,8 +1,9 @@
 ---
 layout: post
 title:  "How to Install Excel Add-Ins with VBA"
-date:   2017-01-19
+date:   2017-01-11
 categories: vba
+tags: vba excel add-in
 ---
 
 ### Goal
@@ -41,6 +42,7 @@ Install or update an Excel add-in programmatically using VBA by double-clicking 
 		Dim toInstall As Integer
 		Dim copiedWbName As String
 		Dim desiredAddInName As String: desiredAddInName = "desired_addin_name.xlam"
+		Dim deleteOld As Boolean: deleteOld = True
    ```
 	
 4. Get a full date and size of the open workbook.  
@@ -111,7 +113,7 @@ If sizes are the same -- quit, but if they are different, prompt for an update.
 	* **Important**:  
 	Open a dummy workbook to avoid an error #1004 (known bug);  
 	* Add add-in to add-ins collection and install.  
-
+  
    ```vb
 		'if the user agreed to install
 		If toInstall = vbYes Then
@@ -120,7 +122,7 @@ If sizes are the same -- quit, but if they are different, prompt for an update.
 			Set fso = CreateObject("Scripting.FileSystemObject")
 			
 			'uninstall and delete the old addin
-			If existingAddInName <> "" Then
+			If deleteOld Then
 				'uninstall the existing addin
 				ai.Installed = False
 				'and delete the file
@@ -189,6 +191,7 @@ Private Sub Workbook_Open()
     Dim toInstall As Integer
     Dim copiedWbName As String
     Dim desiredAddInName As String: desiredAddInName = "desired_addin_name.xlam"
+	Dim deleteOld As Boolean: deleteOld = True
 
     On Error GoTo Errorhandler
     
@@ -239,7 +242,7 @@ Private Sub Workbook_Open()
         Set fso = CreateObject("Scripting.FileSystemObject")
         
         'uninstall and delete the old addin
-        If existingAddInName <> "" Then
+        If deleteOld Then
             'uninstall the existing addin
             ai.Installed = False
             'and delete the file
