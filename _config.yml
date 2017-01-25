@@ -34,3 +34,5 @@ exclude:
   - Gemfile.lock
 kramdown:
   input: GFM
+# Google analytics
+google_analytics: UA-90889267-1
