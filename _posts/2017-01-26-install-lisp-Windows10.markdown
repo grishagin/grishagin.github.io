@@ -17,18 +17,17 @@ tags: windows10 common lisp clisp
 ### Install 
 
 1. Install Emacs.
-   - Unpack contents of Emacs archive
-   - Start **>** type "envir" **>** select ```Edit the system environment variables``` **>** click ```Environment variables...```
-   - Under ```System variables``` double-click ```Path```
-   - Click ```New```, and in the prompt add path to the Emacs ```bin``` folder, e.g. ```C:\ntemacs24\bin```, then click ```OK```   
-2. Create home directory.  
-Under ```System variables``` click ```New...``` and create a new variable with Name ```HOME``` and value ```C:\HOME```.  
-This is necessary to avoid problems with home directory recognition by lisp. 
+   - Unpack contents of Emacs archive.
+   - Add Emacs directory (e.g. ```C:\ntemacs24\bin```) to your PATH [system variable][editsysvar].
+2. Create HOME directory.  
+This is necessary to avoid problems with home directory recognition by lisp.  
+   - Create the ```C:\HOME``` directory.
+   - Add a new [system variable][editsysvar] with Name ```HOME``` and Value ```C:\HOME```.  
 3. Install CLISP.  
    - Create an easy-to-reach, easy-to-use directory. I use ```C:\lisp```.
    - Install CLISP in that directory.  
    **NOTE:** the latest version at the time of writing is 2.49, but I’m having trouble getting it to load SLIME properly (see below), so version 2.48 it is. (file ```clisp-2.48-win32-mingw-big.exe```).  
-   - **Important:**  
+   - **IMPORTANT:**  
    Installer of the version 2.48 is faulty.  
    To fix this problem, copy ```svm.dll``` out of ```clisp-2.48/libsvm``` directory into ```clisp-2.48/full```.
 4. Install quicklisp.  
@@ -63,6 +62,7 @@ In the CLISP console execute:
 
 [fischer]: http://www.jonathanfischer.net/modern-common-lisp-on-windows/
 [baggers]: https://www.youtube.com/watch?v=VnWVu8VVDbI
+[editsysvar]: https://www.youtube.com/watch?v=C-U9SGaNbwY
 [clisp]: https://sourceforge.net/projects/clisp/files/clisp
 [emacs]: http://ntemacs.sourceforge.net/
 [quicklisp]: http://beta.quicklisp.org/quicklisp.lisp
