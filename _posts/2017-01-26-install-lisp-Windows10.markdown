@@ -46,9 +46,9 @@ In the CLISP console execute:
    (ql:quickload "quicklisp-slime-helper")
    ```
 6. Configure Emacs. 
-   - Launch Emacs
-   - Type ```Ctrl-x```, then ```Ctrl-f```
-   - Enter ```~/.emacs``` in the prompt at the bottom of the window
+   - Launch Emacs.
+   - Type ```Ctrl-x```, then ```Ctrl-f```.
+   - Enter ```~/.emacs``` in the prompt at the bottom of the window.
    - Add the following lines to the file:
    
    ```
