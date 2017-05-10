@@ -39,7 +39,7 @@ This is necessary to avoid problems with home directory recognition by lisp.
    (quicklisp-quickstart:install :path "C:/lisp/quicklisp/")
    (ql:add-to-init-file)
    ```
-5. Install SLIME -- an Emacs extension to make lisp development seamless.  
+5. Install SLIME -- Superior Lisp Interaction Mode for Emacs, an Emacs extension to make lisp development seamless.  
 In the CLISP console execute:
    
    ```lisp
