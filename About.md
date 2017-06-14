@@ -26,7 +26,7 @@ Yet, it so happens that I am residing quite far away from sunny California (oh, 
 
 [rancholink]: http://www.ranchobiosciences.com/  
 [ncatslink]: https://ncats.nih.gov/  
-[CV]: {{ site.url }}/downloads/Ivan V Grishagin PhD - CV (2017-05-10).pdf
-[resume]: {{ site.url }}/downloads/Ivan V Grishagin PhD - Resume (2017-05-10).pdf
+[CV]: {{ site.url }}/downloads/Ivan V Grishagin PhD - CV (2017-06-13).pdf
+[resume]: {{ site.url }}/downloads/Ivan V Grishagin PhD - Resume (2017-06-13).pdf
 [scholar]: https://scholar.google.com/citations?user=CpJEPnsAAAAJ&hl=en
 [rgate]:https://www.researchgate.net/profile/Ivan_Grishagin
