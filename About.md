@@ -19,7 +19,9 @@ I am a bioinformatics scientist with a background in chemistry, cell biology, an
 My experience, skills, and education are described in detail in my [Curriculum Vitae][CV], as well as briefly in my [Résumé][resume].  
 As I am a scientist, one can also certainly find me on [Google Scholar][scholar] and [Research Gate][rgate].
 
-Currently, I work for [Rancho BioSciences][rancholink] at the [National Center for Advancing Translational Sciences][ncatslink] in Maryland.
+Currently, I work for [Rancho BioSciences][rancholink] at the [National Center for Advancing Translational Sciences][ncatslink] in Maryland.  
+
+The purpose of this site (aside of my shameless promotion) is to be a repository of the guides I assemble every now and again for the installation and/or use of some quirky software.
 
 [rancholink]: http://www.ranchobiosciences.com/  
 [ncatslink]: https://ncats.nih.gov/  

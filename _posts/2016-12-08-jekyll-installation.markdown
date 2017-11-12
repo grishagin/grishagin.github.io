@@ -49,7 +49,7 @@ $ jekyll new .
 ### Run
 
 ```console
-$ jekyll serve --no-watch
+$ jekyll serve
 ```
 
 After that, navigate to [http://localhost:4000/][localhost] in your browser.
@@ -57,7 +57,7 @@ After that, navigate to [http://localhost:4000/][localhost] in your browser.
 ### General Notes
 
 * For bash formatting, \`\`\`*console* works much better than \`\`\`*bash*.
-
+* Command ```jekyll serve``` used to require a ```--no-watch``` option when run in a linux subsystem on Windows (i.e. every content alteration would require re-serving). As of Nov 2017, this is no longer the case.
 
 
 

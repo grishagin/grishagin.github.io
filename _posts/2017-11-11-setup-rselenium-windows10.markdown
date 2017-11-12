@@ -42,15 +42,15 @@ No default Boot2Docker ISO found locally, downloading the latest release...
 
 4. In Docker Terminal run the following commands:
 ```console
-docker pull selenium/standalone-chrome
-docker run -d -p 4445:4444 selenium/standalone-chrome
+$ docker pull selenium/standalone-chrome
+$ docker run -d -p 4445:4444 selenium/standalone-chrome
 ```
 A full list of Selenium Docker images is available [here][selenium-docker-images].
 
 5. Alternatively, for debug mode (to enable viewing results of RSelenium navigation) use:
 ```console
-docker pull selenium/standalone-chrome-debug
-docker run -d -p 5901:5900 -p 4445:4444 selenium/standalone-chrome-debug
+$ docker pull selenium/standalone-chrome-debug
+$ docker run -d -p 5901:5900 -p 4445:4444 selenium/standalone-chrome-debug
 ```
 Then start the ```TightVNC```.  
 In the prompt, enter ```192.168.99.100:5901``` as ```Remote Host:``` and click ```Connect```.   
