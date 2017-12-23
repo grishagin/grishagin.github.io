@@ -8,7 +8,7 @@ tags: windows10 ubuntu bash
 
 ### Fixing Color Scheme
 
-##### *from [A Medium Corporation][medium]*  
+##### *from [A Medium Corporation][medium] and [bash:tip_colors_and_formatting][bashtips]*
 
 The goal is to replace dark blue color (unreadable on black background) with light magenta in Ubuntu bash console on Windows 10.
 
@@ -26,10 +26,11 @@ The goal is to replace dark blue color (unreadable on black background) with lig
    export LS_COLORS
    
    #change prompt after @ color from white (default) to light magenta
-   PS1='\e[37;1m\u@\e[35m\W\e[0m\$ '
+   PS1='\[\e[37;1m\]\u@\[\e[35m\]\W\[\e[0m\]\$ '
    ```
    
 3. Save changes and close nano by pressing ```Ctrl+X```, followed by ```Y``` and ```Enter```.
    
 
 [medium]: https://medium.com/@iraklis/fixing-dark-blue-colors-on-windows-10-ubuntu-bash-c6b009f8b97c#.3fxtoe4hc
+[bashtips]: https://misc.flogisoft.com/bash/tip_colors_and_formatting
