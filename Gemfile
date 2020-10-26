@@ -17,6 +17,7 @@ gem "minima", "~> 2.0"
 # security updates
 gem "kramdown", ">= 2.3.0"
 gem "nokogiri", ">= 1.10.8"
+gem "rubyzip", ">= 1.3.0"
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
