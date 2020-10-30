@@ -13,20 +13,20 @@ tags: python virtualenv virtualenvwrapper
 pip3 install virtualenvwrapper
 
 # 2. Create a directory for your environments
-$ mkdir py-envs/
+$ mkdir ~/py-envs/
 
 # 3. Add a path to where virtual environments will be stored to your profile
-$ echo "export WORKON_HOME=~/py-envs" >> .profile
+$ echo "export WORKON_HOME=~/py-envs" >> ~/.profile
 
 # 4. Add a path to the correct python symlink or executable to your profile
-$ echo "export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3" >> .profile
+$ echo "export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3" >> ~/.profile
 
 # 5. You need to run this shell script at the start of every session, 
 #    so add it to your profile
-$ echo "source /usr/local/bin/virtualenvwrapper.sh" >> .profile
+$ echo "source /usr/local/bin/virtualenvwrapper.sh" >> ~/.profile
 
 # 6. Source
-$ source .profile
+$ source ~/.profile
 
 # 7. Commands are available now, e.g., to make and load an environment:
 $ mkvirtualenv env1
