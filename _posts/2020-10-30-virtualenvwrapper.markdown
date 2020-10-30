@@ -21,7 +21,8 @@ $ echo "export WORKON_HOME=~/py-envs" >> .profile
 # 4. Add a path to the correct python symlink or executable to your profile
 $ echo "export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3" >> .profile
 
-# 5. You need to run this shell script at the start of every session, so add it to your profile
+# 5. You need to run this shell script at the start of every session, 
+#    so add it to your profile
 $ echo "source /usr/local/bin/virtualenvwrapper.sh" >> .profile
 
 # 6. Source
