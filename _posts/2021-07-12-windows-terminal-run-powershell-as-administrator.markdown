@@ -23,14 +23,14 @@ There is an elegant workaround employing a third-party application, `gsudo`.
 3. Open Windows Terminal -> `Settings` -> `Add new`
 
 4. Under `Command line` add this:
-    ```console
+    ```powershell
     pwsh.exe -Command "gsudo pwsh"
     ```
-    **Note:** `pwsh` is for PowerShell v7 (if you have it). This works equally well for the default PowerShell: just replace `pwsh` with `powershell`.
+    **Note:** `pwsh` is for PowerShell 7 (if you have it). This works equally well for the default PowerShell: just replace `pwsh` with `powershell`.
 
 5. Change the tab icon to distintuish it from the non-elevated version.  
 [Here's a red one][red-pwsh-icon].
 
 [github-691]: https://github.com/microsoft/terminal/issues/691
 [github-gsudo]: https://github.com/gerardog/gsudo
-[red-pwsh-icon]: {{ site.url }}/downloads/powershell.ico
+[red-pwsh-icon]: {{ site.url }}/downloads/posts/powershell.ico
