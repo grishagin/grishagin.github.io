@@ -28,7 +28,7 @@ There is an elegant workaround employing a third-party application, `gsudo`.
     ```
     **Note:** `pwsh` is for PowerShell 7 (if you have it). This works equally well for the default PowerShell: just replace `pwsh` with `powershell`.
 
-5. Change the tab icon to distintuish it from the non-elevated version.  
+5. Change the tab icon to distinguish it from the non-elevated version.  
 [Here's a red one][red-pwsh-icon].
 
 [github-691]: https://github.com/microsoft/terminal/issues/691
