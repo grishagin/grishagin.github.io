@@ -1,0 +1,218 @@
+# Publications shown on /publications/, grouped by `type` and listed in the order given here.
+#
+#   type:    article | abstract | patent | thesis
+#   title:   Markdown allowed (e.g. *Hoxa*)
+#   authors: list of "I. Lastname"; any entry containing "Grishagin" is highlighted
+#   venue:   journal, conference, or institution
+#   details: volume (issue), pages
+#   year:
+#   doi:     optional; becomes a DOI button and the title link
+#   url:     optional; title link when there is no DOI
+#   code:    optional; link to code
+#   note:    optional; shown under the authors
+#
+# Sources: CV (March 2023) and Google Scholar (Oct 2026); DOIs and author lists checked against Crossref.
+
+# ---------- Articles ----------
+
+- type: article
+  title: PERCEPTION predicts patient response and resistance to treatment using single-cell transcriptomics of their tumors
+  authors: ["S. Sinha", "R. Vegesna", "S. Mukherjee", "A.V. Kammula", "S.R. Dhruba", "W. Wu", "D.L. Kerr", "N.U. Nair", "M.G. Jones", "N. Yosef", "O.V. Stroganov", "I. Grishagin", "K.D. Aldape", "C.M. Blakely", "P. Jiang", "C.J. Thomas", "C.H. Benes", "T.G. Bivona", "A.A. Schäffer", "E. Ruppin"]
+  venue: Nature Cancer
+  details: 5 (6), 938–952
+  year: 2024
+  doi: 10.1038/s43018-024-00756-7
+
+- type: article
+  title: The Hidden Pandemic of COVID-19-Induced Organizing Pneumonia
+  authors: ["E. Bazdyrev", "M. Panova", "V. Zherebtsova", "A. Burdenkova", "I. Grishagin", "F. Novikov", "V. Nebolsin"]
+  venue: Pharmaceuticals
+  details: 15 (12), 1574
+  year: 2022
+  doi: 10.3390/ph15121574
+
+- type: article
+  title: "Mapping of UK Biobank clinical codes: Challenges and possible solutions"
+  authors: ["O. Stroganov", "A. Fedarovich", "E. Wong", "Y. Skovpen", "E. Pakhomova", "I. Grishagin", "D. Fedarovich", "T. Khasanova", "D. Merberg", "S. Szalma", "J. Bryant"]
+  venue: PLOS ONE
+  details: 17 (12), e0275816
+  year: 2022
+  doi: 10.1371/journal.pone.0275816
+
+- type: article
+  title: A Workflow of Integrated Resources to Catalyze Network Pharmacology Driven COVID-19 Research
+  authors: ["G. Zahoránszky-Kőhalmi", "V.B. Siramshetty", "P. Kumar", "M. Gurumurthy", "B. Grillo", "B. Mathew", "D. Metaxatos", "M. Backus", "T. Mierzwa", "R. Simon", "I. Grishagin", "L. Brovold", "E.A. Mathé", "M.D. Hall", "S.G. Michael", "A.G. Godfrey", "J. Mestres", "L.J. Jensen", "T.I. Oprea"]
+  venue: J. Chem. Inf. Model.
+  details: 62 (3), 718–729
+  year: 2022
+  doi: 10.1021/acs.jcim.1c00431
+
+- type: article
+  title: "NCATS Inxight Drugs: a comprehensive and curated portal for translational research"
+  authors: ["V.B. Siramshetty", "I. Grishagin", "Ð.-T. Nguyễn", "T. Peryea", "Y. Skovpen", "O. Stroganov", "D. Katzel", "T. Sheils", "A. Jadhav", "E.A. Mathé", "N.T. Southall"]
+  venue: Nucleic Acids Res.
+  details: 50 (D1), D1307–D1316
+  year: 2022
+  doi: 10.1093/nar/gkab918
+
+- type: article
+  title: "Lung Fibrosis after COVID-19: Treatment Prospects"
+  authors: ["E. Bazdyrev", "P. Rusina", "M. Panova", "F. Novikov", "I. Grishagin", "V. Nebolsin"]
+  venue: Pharmaceuticals
+  details: 14 (8), 807
+  year: 2021
+  doi: 10.3390/ph14080807
+
+- type: article
+  title: An integrative knowledge graph for rare diseases, derived from the Genetic and Rare Diseases Information Center (GARD)
+  authors: ["Q. Zhu", "Ð.-T. Nguyễn", "I. Grishagin", "N. Southall", "E. Sid", "A. Pariser"]
+  venue: J. Biomed. Semant.
+  details: 11, 13
+  year: 2020
+  doi: 10.1186/s13326-020-00232-y
+
+- type: article
+  title: Pathways, Processes, and Candidate Drugs Associated with a *Hoxa* Cluster-Dependency Model of Leukemia
+  authors: ["L. Kettyle", "C.E. Lebert-Ghali", "I.V. Grishagin", "G. Dickson", "P.G. O'Reilly", "D. Simpson", "J. Bijl", "K. Mills", "G. Sauvageau", "A. Thompson"]
+  venue: Cancers
+  details: 11 (12), 2036
+  year: 2019
+  doi: 10.3390/cancers11122036
+
+- type: article
+  title: The NCATS BioPlanet – An Integrated Platform for Exploring the Universe of Cellular Signaling Pathways for Toxicology, Systems Biology, and Chemical Genomics
+  authors: ["R. Huang", "I. Grishagin", "Y. Wang", "T. Zhao", "J. Greene", "J.C. Obenauer", "D. Ngan", "D.-T. Nguyen", "R. Guha", "A. Jadhav", "N. Southall", "A. Simeonov", "C.P. Austin"]
+  venue: Front. Pharmacol.
+  details: 10, 445
+  year: 2019
+  doi: 10.3389/fphar.2019.00445
+
+- type: article
+  title: Low-Dose Salinomycin Induces Anti-leukemic Responses in AML and MLL
+  authors: ["G. Roulston", "C. Burt", "L. Kettyle", "K. Matchett", "H. Keenan", "N. Mulgrew", "J. Ramsey", "C. Dougan", "J. McKiernan", "I. Grishagin", "K. Mills", "A. Thompson"]
+  venue: Oncotarget
+  details: 7 (45), 73448–73461
+  year: 2016
+  doi: 10.18632/oncotarget.11866
+
+- type: article
+  title: Automatic Cell Counting with ImageJ
+  authors: ["I. Grishagin"]
+  venue: Anal. Biochem.
+  details: 473, 63–65
+  year: 2015
+  doi: 10.1016/j.ab.2014.12.007
+  code: https://github.com/grishagin/CellCounting
+
+- type: article
+  title: In Vivo Anticancer Activity of Rhomboidal Pt(II) Metallacycles
+  authors: ["I. Grishagin", "J.B. Pollock", "S. Kushal", "T.R. Cook", "P.J. Stang", "B.Z. Olenyuk"]
+  venue: PNAS
+  details: 111 (52), 18448–18453
+  year: 2014
+  doi: 10.1073/pnas.1418712111
+
+- type: article
+  title: In Vivo Modulation of Hypoxia-Inducible Signaling by Topographical Helix Mimetics
+  authors: ["B.B. Lao*", "I. Grishagin*", "H. Mesallati", "T. Brewer", "B.Z. Olenyuk", "P.S. Arora"]
+  note: "* Authors contributed equally."
+  venue: PNAS
+  details: 111 (21), 7531–7536
+  year: 2014
+  doi: 10.1073/pnas.1402393111
+
+- type: article
+  title: "Polyisobutylene-block-Poly(methacrylic acid) Diblock Copolymers: Self-Assembly in Aqueous Media"
+  authors: ["M. Burkhardt", "N. Martinez-Castro", "S. Tea", "M. Drechsler", "I. Babin", "I. Grishagin", "R. Schweins", "D.V. Pergushov", "M. Gradzielski", "A.B. Zezin", "A.H.E. Müller"]
+  venue: Langmuir
+  details: 23 (26), 12864–12874
+  year: 2007
+  doi: 10.1021/la701807b
+
+# ---------- Conference abstracts ----------
+
+- type: abstract
+  title: High-throughput screen identification of albendazole as a novel repurposed drug in acute myeloid leukaemia
+  authors: ["K.B. Matchett", "I.V. Grishagin", "L.M. Kettyle", "C. Dowling", "T.N. Chonghaile", "K.I. Mills", "A. Thompson"]
+  venue: Blood
+  details: 130 (Suppl. 1), 5062
+  year: 2017
+  doi: 10.1182/blood.V130.Suppl_1.5062.5062
+
+- type: abstract
+  title: "Mebendazole: A Candidate FDA Approved Drug for Repurposing in Leukaemia"
+  authors: ["K.B. Matchett", "I. Grishagin", "L.M. Kettyle", "G. Gavory", "T. Harrison", "K.I. Mills", "A. Thompson"]
+  venue: Br. J. Haematol.
+  details: 173 (Suppl. S1), 9
+  year: 2016
+  doi: 10.1111/bjh.14019
+
+- type: abstract
+  title: Conditional Deletion of the HOXA Cluster in MLL-AF9 is Incompatible with Leukemia Maintenance
+  authors: ["L.M. Kettyle", "C. Lebert-Ghali", "I. Grishagin", "G.J. Dickson", "J.J. Bijl", "M.F. McMullin", "T.R. Lappin", "K.I. Mills", "A. Thompson"]
+  venue: Haematologica
+  details: 101 (S1), 38
+  year: 2016
+
+- type: abstract
+  title: Conditional Deletion of the Hoxa Cluster in MLL-AF9 is Incompatible with Leukemia Maintenance
+  authors: ["L.M. Kettyle", "I. Grishagin", "G.J. Dickson", "C. Lebert-Ghali", "J.J. Bijl", "K.I. Mills", "A. Thompson"]
+  venue: Br. J. Haematol.
+  details: 173 (Suppl. S1), 121
+  year: 2016
+  doi: 10.1111/bjh.14019
+
+- type: abstract
+  title: Conditional Deletion of the Hoxa Cluster in MLL-AF9 is Incompatible with Leukemia Maintenance
+  authors: ["L.M. Kettyle", "I. Grishagin", "G.J. Dickson", "C. Lebert-Ghali", "J.J. Bijl", "K.I. Mills", "A. Thompson"]
+  venue: Blood
+  details: 126 (23), 3630
+  year: 2015
+  doi: 10.1182/blood.V126.23.3630.3630
+
+- type: abstract
+  title: "Novel Selective HIF1 Alpha Inhibitor: Well Tolerated with Excellent Efficacy in Renal Cell Cancer Xenograft Studies"
+  authors: ["R. Dubey", "I. Grishagin", "U. Nagavarapu", "C. Balan", "S. Gupta", "B.Z. Olenyuk"]
+  venue: Cancer Res.
+  details: 74 (19 Suppl.), 1014
+  year: 2014
+  doi: 10.1158/1538-7445.AM2014-1014
+
+- type: abstract
+  title: "OOPs: Novel HIF-1α Mimics"
+  authors: ["I. Grishagin", "B.Z. Olenyuk", "B. Bullock", "P.S. Arora"]
+  venue: Cancer Res.
+  details: 72 (8 Suppl.), 283
+  year: 2012
+  doi: 10.1158/1538-7445.AM2012-283
+
+- type: abstract
+  title: Interpolyelectrolyte complexes based on micelles of ionic amphiphilic diblock copolymers
+  authors: ["D.V. Pergushov", "M. Burkhardt", "I.V. Grishagin", "I.A. Babin", "E.V. Remizova", "et al."]
+  venue: Abstracts of Papers of the American Chemical Society
+  details: 231, 317-COLL
+  year: 2006
+
+# ---------- Patents ----------
+
+- type: patent
+  title: Control of Hypoxia-Inducible Gene Expression with Oligooxopiperazine Nonpeptidic Helix Mimetics
+  authors: ["P.S. Arora", "B.Z. Olenyuk", "B. Bullock", "I. Grishagin"]
+  venue: US Patent 9,255,086 B2
+  year: 2016
+  url: https://patents.google.com/patent/US9255086B2
+
+- type: patent
+  title: Control of Hypoxia-Inducible Gene Expression with Oligooxopiperazine Nonpeptidic Helix Mimetics
+  authors: ["P.S. Arora", "B.Z. Olenyuk", "B. Bullock", "I. Grishagin"]
+  venue: International Patent WO 2013/123511 A1
+  year: 2013
+  url: https://patents.google.com/patent/WO2013123511A1
+
+# ---------- Thesis ----------
+
+- type: thesis
+  title: Small Molecule Modulators of HIF1α Signaling
+  authors: ["I.V. Grishagin"]
+  venue: PhD dissertation, University of Southern California
+  year: 2014

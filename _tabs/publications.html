@@ -1,0 +1,89 @@
+---
+title: Publications
+icon: fas fa-book
+order: 5
+---
+
+{%- comment -%}
+  Entries live in _data/publications.yml.
+  Author lists longer than max_authors collapse to: first 3 … me … last (click to expand).
+{%- endcomment -%}
+{%- assign max_authors = 8 -%}
+
+<p>Citation counts and the most current list are on
+  <a href="https://scholar.google.com/citations?user=CpJEPnsAAAAJ">Google Scholar</a>.</p>
+
+{%- assign sections = "article:Articles|abstract:Conference abstracts|patent:Patents|thesis:Dissertation" | split: "|" -%}
+{%- for section in sections -%}
+  {%- assign key = section | split: ":" | first -%}
+  {%- assign heading = section | split: ":" | last -%}
+  {%- assign pubs = site.data.publications | where: "type", key -%}
+  {%- if pubs.size == 0 -%}{%- continue -%}{%- endif -%}
+
+  <h2 id="{{ key }}s">{{ heading }} <span class="pub-count">{{ pubs.size }}</span></h2>
+
+  <div class="pub-list">
+  {%- for pub in pubs -%}
+    {%- assign n = pub.authors.size -%}
+    {%- assign last_i = n | minus: 1 -%}
+    {%- assign me_i = -1 -%}
+    {%- for a in pub.authors -%}{%- if a contains "Grishagin" -%}{%- assign me_i = forloop.index0 -%}{%- endif -%}{%- endfor -%}
+
+    {%- capture full -%}
+      {%- for a in pub.authors -%}{% include pub-author.html name=a %}{% unless forloop.last %}, {% endunless %}{%- endfor -%}
+    {%- endcapture -%}
+
+    {%- if pub.doi -%}{%- capture link -%}https://doi.org/{{ pub.doi }}{%- endcapture -%}{%- else -%}{%- assign link = pub.url -%}{%- endif -%}
+
+    <article class="pub-card">
+      <div class="pub-year">{{ pub.year }}</div>
+      <div class="pub-body">
+        <div class="pub-title">
+          {%- assign title = pub.title | markdownify | remove: "<p>" | remove: "</p>" | strip -%}
+          {%- if link -%}<a href="{{ link }}">{{ title }}</a>{%- else -%}{{ title }}{%- endif -%}
+        </div>
+
+        <div class="pub-authors">
+          {%- if n > max_authors -%}
+            {%- assign prev = -1 -%}
+            {%- assign shown = 0 -%}
+            {%- capture compact -%}
+              {%- for a in pub.authors -%}
+                {%- assign i = forloop.index0 -%}
+                {%- if i < 3 or i == me_i or i == last_i -%}
+                  {%- if prev >= 0 -%}{%- assign gap = i | minus: prev -%}{%- if gap > 1 -%}, …, {% else %}, {% endif -%}{%- endif -%}
+                  {% include pub-author.html name=a %}
+                  {%- assign prev = i -%}
+                  {%- assign shown = shown | plus: 1 -%}
+                {%- endif -%}
+              {%- endfor -%}
+            {%- endcapture -%}
+            <details>
+              <summary title="Show all {{ n }} authors">
+                <span class="pub-authors-compact">{{ compact }} <span class="pub-more">+{{ n | minus: shown }} more</span></span>
+                <span class="pub-authors-full">{{ full }}</span>
+              </summary>
+            </details>
+          {%- else -%}
+            {{ full }}
+          {%- endif -%}
+        </div>
+        {%- if pub.note -%}<div class="pub-note">{{ pub.note }}</div>{%- endif -%}
+
+        <div class="pub-meta">
+          <span class="pub-venue">{{ pub.venue }}</span>
+          {%- if pub.details -%}<span class="pub-details">{{ pub.details }}</span>{%- endif -%}
+        </div>
+
+        {%- if pub.doi or pub.code or pub.url -%}
+          <div class="pub-links">
+            {%- if pub.doi -%}<a class="pub-btn" href="https://doi.org/{{ pub.doi }}"><i class="fas fa-link"></i> DOI</a>{%- endif -%}
+            {%- if pub.url -%}<a class="pub-btn" href="{{ pub.url }}"><i class="fas fa-file-lines"></i> Patent</a>{%- endif -%}
+            {%- if pub.code -%}<a class="pub-btn" href="{{ pub.code }}"><i class="fab fa-github"></i> Code</a>{%- endif -%}
+          </div>
+        {%- endif -%}
+      </div>
+    </article>
+  {%- endfor -%}
+  </div>
+{%- endfor -%}

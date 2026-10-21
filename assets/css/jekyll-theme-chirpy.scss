@@ -1,0 +1,227 @@
+---
+---
+
+@use 'abstracts/variables' with (
+  $theme: '{{ site.theme_mode }}'
+);
+
+/* prettier-ignore */
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* append your custom style below */
+
+/* ---------- Sidebar ---------- */
+
+#sidebar .profile-wrapper {
+  margin-bottom: 2rem;
+}
+
+#sidebar .site-title {
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+
+/* ---------- About: text column + photo on the right ---------- */
+
+.about-me {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+
+  .about-text {
+    flex: 1;
+    min-width: 0;
+  }
+
+  /* A wrapper div, because Chirpy wraps content images in a lightbox link */
+  .about-photo {
+    flex: 0 0 200px;
+    width: 200px;
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 0.5rem;
+    }
+  }
+
+  /* Narrow screens: photo on top, text below */
+  @media (max-width: 575.98px) {
+    flex-direction: column-reverse;
+    align-items: stretch;
+
+    .about-photo {
+      flex-basis: auto;
+      align-self: center;
+    }
+  }
+}
+
+/* ---------- Publications ---------- */
+
+:root {
+  --pub-me-color: #1a7f37;
+  --pub-me-bg: #dafbe1;
+  --pub-me-border: #4ac26b;
+}
+
+@mixin pub-dark {
+  --pub-me-color: #7ee787;
+  --pub-me-bg: rgb(46 160 67 / 15%);
+  --pub-me-border: #2ea043;
+}
+
+:root[data-bs-theme='dark'] {
+  @include pub-dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-bs-theme]) {
+    @include pub-dark;
+  }
+}
+
+.pub-count {
+  font-size: 0.6em;
+  font-weight: 400;
+  color: var(--text-muted-color);
+  vertical-align: middle;
+}
+
+.pub-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.pub-card {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  background: var(--card-bg);
+  border: 1px solid var(--main-border-color);
+  border-radius: 0.625rem;
+  box-shadow: var(--card-shadow);
+}
+
+.pub-year {
+  flex: 0 0 3rem;
+  font-weight: 600;
+  color: var(--text-muted-color);
+  font-variant-numeric: tabular-nums;
+}
+
+.pub-body {
+  flex: 1;
+  min-width: 0;
+
+  > div + div {
+    margin-top: 0.3rem;
+  }
+}
+
+.pub-title {
+  font-weight: 600;
+  font-size: 1.05rem;
+  line-height: 1.4;
+}
+
+/* `.content` prefix to outrank Chirpy's underlined `.content a:not(.img-link)` */
+.content .pub-title a {
+  color: var(--heading-color);
+  border-bottom: none;
+
+  &:hover {
+    color: var(--link-color);
+    border-bottom: none;
+  }
+}
+
+.pub-authors {
+  font-size: 0.9rem;
+  line-height: 1.7;
+
+  details > summary {
+    cursor: pointer;
+    list-style: none;
+
+    &::-webkit-details-marker {
+      display: none;
+    }
+  }
+
+  .pub-authors-full,
+  details[open] .pub-authors-compact {
+    display: none;
+  }
+
+  details[open] .pub-authors-full {
+    display: inline;
+  }
+
+  .pub-more {
+    color: var(--link-color);
+    white-space: nowrap;
+  }
+}
+
+.pub-me {
+  display: inline-block;
+  padding: 0 0.5em;
+  line-height: 1.5;
+  font-weight: 600;
+  white-space: nowrap;
+  color: var(--pub-me-color);
+  background: var(--pub-me-bg);
+  border: 1px solid var(--pub-me-border);
+  border-radius: 999px;
+}
+
+.pub-note {
+  font-size: 0.8rem;
+  color: var(--text-muted-color);
+}
+
+.pub-meta {
+  font-size: 0.9rem;
+  color: var(--text-muted-color);
+
+  .pub-venue {
+    font-style: italic;
+  }
+
+  .pub-details::before {
+    content: ' · ';
+  }
+}
+
+.pub-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  padding-top: 0.2rem;
+}
+
+.content a.pub-btn {
+  font-size: 0.75rem;
+  padding: 0.1rem 0.6rem;
+  border: 1px solid var(--main-border-color);
+  border-radius: 999px;
+  color: var(--text-muted-color);
+
+  &:hover {
+    color: var(--link-color);
+    border-color: var(--link-color);
+  }
+}
+
+@media (max-width: 575.98px) {
+  .pub-card {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+}
