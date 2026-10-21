@@ -9,10 +9,6 @@ platforms:
     icon: "fa-brands fa-square-reddit"
     link: "https://www.reddit.com/submit?url=URL&title=TITLE"
 
-  - type: Bluesky
-    icon: "fa-brands fa-bluesky"
-    link: "https://bsky.app/intent/compose?text=TITLE%20URL"
-
   - type: Telegram
     icon: "fab fa-telegram"
     link: "https://t.me/share/url?url=URL&text=TITLE"
