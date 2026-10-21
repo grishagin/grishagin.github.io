@@ -27,12 +27,15 @@ twitter_username: ivan_grishagin
 # Build settings
 markdown: kramdown
 theme: minima
-gems:
+plugins:
   - jekyll-feed
 exclude:
   - Gemfile
   - Gemfile.lock
+include:
+  - _menu
+# Pages listed in the site header navigation
+header_pages:
+  - _menu/about.md
 kramdown:
   input: GFM
-# Google analytics
-google_analytics: UA-90889267-1
