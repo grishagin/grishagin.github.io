@@ -6,7 +6,7 @@ categories: neo4j
 tags: neo4j websocket cypher-shell
 ---
 
-##### *from [GitHub: Windows Terminal Issue 5420][github-5420], [GitHub: Windows Terminal Issue 5256][github-5256]
+##### *from [GitHub: WSL Issue 5420][github-5420], [GitHub WSL Issue 5256][github-5256]
 
 ## Synopsis
 Upon pressing `Connect` in the Neo4j web interface, the following message is displayed:
@@ -62,3 +62,5 @@ There are two possible options:
     ```
 
 [neo4j-uri-scheme]: https://neo4j.com/docs/java-manual/current/client-applications/#java-driver-configuration-examples
+[github-5420]: https://github.com/microsoft/WSL/issues/5420
+[github-5256]: https://github.com/microsoft/WSL/issues/5256
