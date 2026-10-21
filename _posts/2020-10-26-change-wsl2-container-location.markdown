@@ -1,12 +1,14 @@
 ---
-layout: post
-title:  "Change Location of WSL2 Container"
-date:   2020-10-26
-categories: ubuntu 
-tags: windows10 windows subsystem linux wsl2 ext4
+title: "Change Location of WSL2 Container"
+date: 2020-10-26
+categories: [Linux, WSL]
+tags: [wsl, windows]
+redirect_from:
+  - /ubuntu/2020/10/26/change-wsl2-container-location.html
+outdated: "Recent WSL versions can do this in one command: `wsl --manage <distro> --move <new-location>`."
 ---
 
-##### *from [dev.to][devto]
+##### *from [dev.to][devto]*
 
 WSL2 container is located on the `C:\` drive by default. 
 This can be inconvenient, as it can grow to a substantial size.  

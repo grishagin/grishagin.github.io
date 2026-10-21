@@ -1,12 +1,14 @@
 ---
-layout: post
-title:  "Install/Configure VirtualEnvWrapper"
-date:   2020-10-30
-categories: ubuntu 
-tags: python virtualenv virtualenvwrapper
+title: "Install/Configure VirtualEnvWrapper"
+date: 2020-10-30
+categories: [Programming, Python]
+tags: [python, virtualenv, ubuntu]
+redirect_from:
+  - /ubuntu/2020/10/30/virtualenvwrapper.html
+outdated: "On Ubuntu 23.04 and later, `pip3 install` outside a virtual environment is blocked (PEP 668); use `sudo apt install virtualenvwrapper` and source `/usr/share/virtualenvwrapper/virtualenvwrapper.sh` instead."
 ---
 
-##### *from [readthedocs][readthedocs], [Stack Overflow (1)][stack1], [Stack Overflow (2)][stack2]
+##### *from [readthedocs][readthedocs], [Stack Overflow (1)][stack1], [Stack Overflow (2)][stack2]*
 
 ```bash
 # 1. Install

@@ -1,0 +1,33 @@
+# Repositories shown on the Projects page, in this order.
+#
+#   repo:        GitHub repository name under github.com/grishagin (required)
+#   description: optional; replaces the GitHub description (Markdown OK)
+#
+# Language, stars and last-push date come from GitHub at build time.
+
+- repo: CellCounting
+  description: >-
+    ImageJ plugins that count mammalian cells in hemocytometer images, 10–15× faster than counting by hand.
+    Published in [*Analytical Biochemistry* (2015)](https://doi.org/10.1016/j.ab.2014.12.007).
+
+- repo: pcloud-watcher
+
+- repo: git-identity
+
+- repo: Illumina_BeadArray
+
+- repo: SangerSeq
+
+- repo: RIGplotbiopax
+  description: R package that plots BioPAX pathways as SVG and HTML.
+
+- repo: RIGbiopax
+  description: R package that extracts genes and pathways from BioPAX sources and compares them to gene or pathway lists from other sources.
+
+- repo: RIGconvertbiopax
+  description: R package that extracts interactions from BioPAX `.owl` files and writes flat files back into BioPAX.
+
+- repo: DragToScroll
+  description: >-
+    AutoHotkey script for panning any window by right-click-dragging, modified so it no longer
+    breaks browser mouse gestures or right-drag in File Explorer.

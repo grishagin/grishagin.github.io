@@ -1,12 +1,14 @@
 ---
-layout: post
-title:  "WSL2: Temporary Failure in Name Resolution"
-date:   2021-11-22
-categories: wsl2 dns ubuntu
-tags: wsl2 dns ubuntu
+title: "WSL2: Temporary Failure in Name Resolution"
+date: 2021-11-22
+categories: [Linux, WSL]
+tags: [wsl, dns, ubuntu]
+redirect_from:
+  - /wsl2/dns/ubuntu/2021/11/22/wsl2-temporary-failure-name-resolution.html
+outdated: "Newer WSL versions offer `dnsTunneling=true` under `[wsl2]` in `.wslconfig`, which fixes many DNS problems without editing `resolv.conf`."
 ---
 
-##### *from [GitHub: Windows Terminal Issue 5420][github-5420], [GitHub: Windows Terminal Issue 5256][github-5256]
+##### *from [GitHub: Windows Terminal Issue 5420][github-5420], [GitHub: Windows Terminal Issue 5256][github-5256]*
 
 
 In WSL2, run: 

@@ -1,12 +1,12 @@
 ---
-layout: post
-title:  "Neo4j Websocket Connection Failure"
-date:   2022-03-29
-categories: neo4j
-tags: neo4j websocket cypher-shell
+title: "Neo4j Websocket Connection Failure"
+date: 2022-03-29
+categories: [Databases, Neo4j]
+tags: [neo4j, tls, cypher-shell]
+redirect_from:
+  - /neo4j/2022/03/29/neo4j-websocket-issue.html
 ---
 
-##### *from [GitHub: WSL Issue 5420][github-5420], [GitHub WSL Issue 5256][github-5256]
 
 ## Synopsis
 Upon pressing `Connect` in the Neo4j web interface, the following message is displayed:
@@ -14,7 +14,7 @@ Upon pressing `Connect` in the Neo4j web interface, the following message is dis
 ServiceUnavailable: WebSocket connection failure. Due to security constraints in your web browser, the reason for the failure is not available to this Neo4j Driver. Please use your browsers development console to determine the root cause of the failure. Common reasons include the database being unavailable, using the wrong connection URL or temporary network problems. If you have enabled encryption, ensure your browser is configured to trust the certificate Neo4j is configured to use. WebSocket `readyState` is: 3
 ```
 
-Multiple solutions are proposed by the Neo4j team and elsewhere usually involve manipulating configuration files. Solutions presented below have not been mentioned anywhere.
+Multiple solutions proposed by the Neo4j team and elsewhere usually involve manipulating configuration files. Solutions presented below have not been mentioned anywhere.
 
 ## Possible Solutions
 
@@ -62,5 +62,3 @@ There are two possible options:
     ```
 
 [neo4j-uri-scheme]: https://neo4j.com/docs/java-manual/current/client-applications/#java-driver-configuration-examples
-[github-5420]: https://github.com/microsoft/WSL/issues/5420
-[github-5256]: https://github.com/microsoft/WSL/issues/5256

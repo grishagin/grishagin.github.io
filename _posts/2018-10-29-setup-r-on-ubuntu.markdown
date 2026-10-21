@@ -1,12 +1,14 @@
 ---
-layout: post
-title:  "Setup R on Ubuntu"
-date:   2018-10-29
-categories: r ubuntu 
-tags: r ubuntu windows10 tidyverse subsystem linux wsl
+title: "Setup R on Ubuntu"
+date: 2018-10-29
+categories: [Programming, R]
+tags: [r, ubuntu, wsl]
+redirect_from:
+  - /r/ubuntu/2018/10/29/setup-r-on-ubuntu.html
+outdated: "The `rrutter3.5` PPA has long been superseded; see CRAN's [Ubuntu instructions](https://cran.r-project.org/bin/linux/ubuntu/)."
 ---
 
-##### *from [Michael Rutter][mrutter], [Stack Overflow][stack], and (of course) trial and error
+##### *from [Michael Rutter][mrutter], [Stack Overflow][stack], and (of course) trial and error*
 
 Installing and setting up R on Ubuntu can be a frustrating experience due to multiple system dependencies.
 

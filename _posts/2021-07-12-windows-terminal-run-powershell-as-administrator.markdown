@@ -1,12 +1,14 @@
 ---
-layout: post
-title:  "Windows Terminal: Run PowerShell as Administrator"
-date:   2021-07-12
-categories: windows terminal 
-tags: windows terminal powershell gsudo
+title: "Windows Terminal: Run PowerShell as Administrator"
+date: 2021-07-12
+categories: [Windows, Terminal]
+tags: [windows-terminal, powershell, gsudo]
+redirect_from:
+  - /windows/terminal/2021/07/12/windows-terminal-run-powershell-as-administrator.html
+outdated: "Windows Terminal now supports this natively (**Run this profile as Administrator** in the profile settings), and Windows 11 24H2 has a built-in `sudo`."
 ---
 
-##### *from [GitHub: Windows Terminal Issue 691][github-691], [GitHub: gerardog/gsudo][github-gsudo]
+##### *from [GitHub: Windows Terminal Issue 691][github-691], [GitHub: gerardog/gsudo][github-gsudo]*
 
 Currently, Windows Terminal does not support running individual tabs as Administrator.  
 There is an elegant workaround employing a third-party application, `gsudo`.
@@ -33,4 +35,4 @@ There is an elegant workaround employing a third-party application, `gsudo`.
 
 [github-691]: https://github.com/microsoft/terminal/issues/691
 [github-gsudo]: https://github.com/gerardog/gsudo
-[red-pwsh-icon]: {{ site.url }}/downloads/posts/powershell.ico
+[red-pwsh-icon]: /downloads/posts/powershell.ico

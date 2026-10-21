@@ -1,8 +1,11 @@
 ---
-layout: post
-title:  "Jekyll and Github Pages"
-date:   2016-12-09
-categories: jekyll
+title: "Jekyll and Github Pages"
+date: 2016-12-09
+categories: [Web, Jekyll]
+tags: [jekyll, github-pages, kramdown]
+redirect_from:
+  - /jekyll/2016/12/09/jekyll-github-pages.html
+outdated: "It describes the 2016 GitHub Pages build; this site has since moved to a GitHub Actions build."
 ---
 
 Setting up github pages is [easy][github pages setup].  

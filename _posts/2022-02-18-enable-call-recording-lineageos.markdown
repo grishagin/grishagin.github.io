@@ -1,12 +1,13 @@
 ---
-layout: post
-title:  "How to Enable Call Recording in LineageOS"
-date:   2022-02-18
-categories: call recording lineageos android
-tags: lineageos android
+title: "How to Enable Call Recording in LineageOS"
+date: 2022-02-18
+categories: [Android, LineageOS]
+tags: [android, lineageos, adb]
+redirect_from:
+  - /call/recording/lineageos/android/2022/02/18/enable-call-recording-lineageos.html
 ---
 
-##### *from [XDA developers][xda1] and [Stackexchange][stack]
+##### *from [XDA developers][xda1] and [Stackexchange][stack]*
 
 ## Environment 
 1. ADB

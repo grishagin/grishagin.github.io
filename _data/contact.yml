@@ -1,0 +1,20 @@
+# Contact links in the sidebar. Icons: https://fontawesome.com/icons
+
+- type: github
+  icon: "fab fa-github"
+
+- type: google-scholar
+  icon: "fas fa-graduation-cap"
+  url: "https://scholar.google.com/citations?user=CpJEPnsAAAAJ"
+
+- type: researchgate
+  icon: "fab fa-researchgate"
+  url: "https://www.researchgate.net/profile/Ivan_Grishagin"
+
+- type: email
+  icon: "fas fa-envelope"
+  noblank: true # open link in current tab
+
+- type: rss
+  icon: "fas fa-rss"
+  noblank: true

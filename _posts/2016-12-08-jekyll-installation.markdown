@@ -1,8 +1,11 @@
 ---
-layout: post
-title:  "Installing Jekyll via Bash on Ubuntu on Windows 10"
-date:   2016-12-08 15:38:37 -0500
-categories: jekyll
+title: "Installing Jekyll via Bash on Ubuntu on Windows 10"
+date: 2016-12-08 15:38:37 -0500
+categories: [Web, Jekyll]
+tags: [jekyll, ruby, wsl]
+redirect_from:
+  - /jekyll/2016/12/08/jekyll-installation.html
+outdated: "Ruby 2.3 and Python 2.7 are long past end-of-life; see the current [Jekyll installation guide](https://jekyllrb.com/docs/installation/)."
 ---
 
 Here's what worked for me.  

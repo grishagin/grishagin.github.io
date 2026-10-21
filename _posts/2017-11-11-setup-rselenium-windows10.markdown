@@ -1,18 +1,12 @@
 ---
-layout: post
-title:  "How to Setup Environment for RSelenium on Windows 10"
-date:   2017-11-11
-categories: r rselenium
-tags: r rselenium windows10 docker
+title: "How to Setup Environment for RSelenium on Windows 10"
+date: 2017-11-11
+categories: [Programming, R]
+tags: [r, rselenium, docker, windows]
+redirect_from:
+  - /r/rselenium/2017/11/11/setup-rselenium-windows10.html
+outdated: "Docker Toolbox and boot2docker have been retired in favor of Docker Desktop, and the `-debug` Selenium images are deprecated."
 ---
-
-<style type="text/css">
-.docker-console {
-	width: 600px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-}
-</style>
 
 ##### *from [RSelenium vignette][rselenium], [RPubs][rselenium-rpubs], and [Docker GitHub][boot2docker-issue]*  
 
@@ -38,7 +32,7 @@ No default Boot2Docker ISO found locally, downloading the latest release...
 ``` 
 
 3. Start ```Docker Quickstart Terminal```. You should see a console prompt similar to this one:   
-![Docker Console]({{ site.url }}/assets/docker-console.png){: .docker-console}
+![Docker Console](/assets/docker-console.png){: width="600" }
 
 4. In Docker Terminal run the following commands:
 ```console

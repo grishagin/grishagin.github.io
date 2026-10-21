@@ -1,6 +1,13 @@
+# Bundler
+.bundle/
+vendor/
+
+# Jekyll
 _site/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
-.bundle/
-vendor/
+
+# Chirpy build output
+_sass/vendors
+assets/js/dist

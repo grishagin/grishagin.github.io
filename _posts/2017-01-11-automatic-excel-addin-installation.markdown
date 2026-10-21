@@ -1,9 +1,10 @@
 ---
-layout: post
-title:  "How to Install Excel Add-Ins with VBA"
-date:   2017-01-11
-categories: vba
-tags: vba excel add-in
+title: "How to Install Excel Add-Ins with VBA"
+date: 2017-01-11
+categories: [Windows, Excel]
+tags: [vba, excel, add-in]
+redirect_from:
+  - /vba/2017/01/11/automatic-excel-addin-installation.html
 ---
 
 ### Goal
