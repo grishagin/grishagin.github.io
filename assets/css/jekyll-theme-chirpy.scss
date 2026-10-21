@@ -25,6 +25,17 @@
   font-weight: 500;
 }
 
+/* ---------- Post images inside list items ---------- */
+
+/* Chirpy centers image paragraphs with left: 50% + translateX(-50%), which shifts
+   images in list items (especially several on one line) off to the right.
+   Keep them aligned with the list item's text instead. Top-level images stay centered. */
+main li p > a.popup:not(.normal):not(.left):not(.right) {
+  left: auto;
+  transform: none;
+  margin-right: 0.5rem;
+}
+
 /* ---------- About: text column + photo on the right ---------- */
 
 .about-me {

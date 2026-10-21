@@ -56,10 +56,10 @@ Levain is what you would use for regular bread making.
    3. Flour.
    4. Salt.
 
-   ![Levain and water in a mixing bowl on a kitchen scale](/assets/sourdough/mixing-ingredients.png){: width="400"}
+   ![Levain and water in a mixing bowl on a kitchen scale](/assets/sourdough/mixing-ingredients.png){: width="321"}
 3. Mix by hand or in a mixer with the dough hook until smooth (~5 minutes).
 
-   ![Dough moving as one lump on the dough hook](/assets/sourdough/mixing-dough-lump.png){: width="600"}
+   ![Dough moving as one lump on the dough hook](/assets/sourdough/mixing-dough-lump.png){: width="527"}
 4. The dough must be moving as one lump. If you notice some of the dough is sticking to the bottom of the bowl, add some flour (start with 1-2 tbsp) and let it incorporate. Repeat until the dough is no longer sticking to the bowl.
 5. Cover the mixing bowl with a towel and wait for 30-60 min.  
 6. Mix by hand or in a mixer with the dough hook until smooth (~7 min).
@@ -75,8 +75,8 @@ Levain is what you would use for regular bread making.
    - The dough in the bowl will be gassy and lively.
    - This may take anywhere from 6 (summer) to 12 (winter) hours, on average.
 
-   ![Dough sample in a glass jar, risen well above the marked level](/assets/sourdough/proofing-sample-jar.png){: width="250"}
-   ![Proofed dough, domed and gassy in the bowl](/assets/sourdough/proofing-dough-bowl.png){: width="250"}
+   ![Dough sample in a glass jar, risen well above the marked level](/assets/sourdough/proofing-sample-jar.png){: width="194"}
+   ![Proofed dough, domed and gassy in the bowl](/assets/sourdough/proofing-dough-bowl.png){: width="194"}
 3. Check the smell and consistency of the dough: it should still have the same pleasant sweet smell.  
    **If the dough smells *foul* and is *extremely* sticky, discard.**
 4. Prepare a bread basket or any other ventilated vessel (e.g., colander) to hold the dough (a strainer works well).
@@ -105,13 +105,13 @@ Levain is what you would use for regular bread making.
    4. Spray with water thoroughly.
       - This is to create a bubbly texture on the crust.
 
-      ![Close-up of a bubbly baked crust](/assets/sourdough/baking-crust.png){: width="320"}
+      ![Close-up of a bubbly baked crust](/assets/sourdough/baking-crust.png){: width="235"}
    5. Cover with the body of the Dutch oven (so the oven will be resting on its lid upside-down).
    6. Return the assembly into the oven.
 4. Bake covered for 30 minutes.
 5. Remove the cover, bake for 20 more minutes.
 6. Enjoy!
 
-![Baked sourdough loaf on a cutting board](/assets/sourdough/baked-loaf.png){: width="600"}
+   ![Baked sourdough loaf on a cutting board](/assets/sourdough/baked-loaf.png){: width="527"}
 
-![Sourdough loaf cut in half, showing an open crumb](/assets/sourdough/baked-loaf-crumb.png){: width="600"}
+   ![Sourdough loaf cut in half, showing an open crumb](/assets/sourdough/baked-loaf-crumb.png){: width="527"}
